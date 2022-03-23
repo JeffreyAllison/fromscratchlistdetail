@@ -33,19 +33,19 @@ export function renderAmpDetail(amp) {
   nameEl.textContent = amp.name;
   nameEl.classList.add('name');
 
-  manufacturerEl.textContent = amp.manufacturer;
+  manufacturerEl.textContent = `manufactured by: ${amp.manufacturer}`;
   manufacturerEl.classList.add('manufacturer');
 
-  yearEl.textContent = `first introduced in ${amp.year}`;
+  yearEl.textContent = `first introduced in: ${amp.year}`;
   yearEl.classList.add('year');
 
-  toneEl.textContent = amp.tone_description;
+  toneEl.textContent = `tonal characteristics: ${amp.tone_description}`;
   toneEl.classList.add('tone_description');
 
-  wattsEl.textContent = `output wattage ${amp.watts}`;
+  wattsEl.textContent = `output wattage: ${amp.watts}`;
   wattsEl.classList.add('watts');
 
-  reissueEl.textContent = `Currently in production as reissue? ${amp.production_reissue}`;
+  reissueEl.textContent = `Currently in production: ${amp.production_reissue}`;
   reissueEl.classList.add('production_reissue');
 
   img.src = `../assets/${amp.manufacturer}.png`;
