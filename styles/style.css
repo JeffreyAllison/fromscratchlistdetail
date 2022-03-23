@@ -89,3 +89,15 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+#amp {
+  height: 100px;
+  width: 100px;
+  justify-content: left;
+}
+
+#amp-list-container{
+  height: 100px;
+  width: 100px;
+  justify-content: left;
+}
